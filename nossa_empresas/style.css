@@ -1,0 +1,306 @@
+@charset "UTF-8"; /* Define a codificação da folha de estilo para Unicode UTF-8 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP&display=swap');
+
+/*
+    Media Query Breakpoints
+
+    Mobile Devices - 320px - 480px
+    Ipads and Tablets - 481px - 768px
+    laptops - 769px - 1024px
+    Large Screens - 1025px - 1200px.
+*/
+
+:root {
+
+    /*CORES UTILIZADAS NO QUEM SOMOS*/
+
+    --verde: #79cecb;
+    --azul: #4d509a;
+    --paragrafos: #787878;
+
+    /*FONTE UTILIZADOS NO QUEM SOMOS*/
+
+    --fonte-padrao: 'Noto Sans JP', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    background-color:white;
+    font-family: var(--fonte-padrao);
+    overflow-x: hidden;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin-top:  60px;
+}
+
+
+section.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.txt {
+    width: 250px;
+    margin-top: 15px ;
+    padding: 10px;
+    text-align: left;
+
+}
+
+
+.h1_qmsomos {
+    letter-spacing: 1.6px;
+    line-height: 25px;
+}
+
+#h1_1 {
+    font-weight: bolder;
+    color: var(--verde);
+
+}
+
+#h1_2 {
+    font-weight: 900;
+    color: var(--azul);
+}
+
+#p_qmsomos {
+    font-size: 0.8em;
+    color: var(--paragrafos);
+    letter-spacing: 0.5px;
+    line-height: 14px;
+    margin-top: 10%;
+}
+
+.imagem>img {
+
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.p_img_qmsomos {
+    color: var(--azul);
+    font-size: 0.9em;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .txt {
+        font-size: 2em;
+        width: 350px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .imagem>img {
+        width: 280px;
+        height: 280px;
+    }
+
+    #h1_1, #h1_2 {
+        text-align: center;
+        line-height: 40px;
+    }
+
+     #p_qmsomos {
+        width: 300px;
+        line-height: 27px;
+        margin: 20px auto;
+    }
+
+    .p_img_qmsomos {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .txt {
+        font-size: 2.5em;
+        width: 520px;
+        margin: 15px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    #h1_1, #h1_2 {
+        line-height: 55px;
+     }
+
+    .imagem>img {
+        width: 350px;
+        height: 330px;
+    }
+
+     #p_qmsomos {
+        width: 400px;
+        line-height: 32px;
+        margin: 20px auto;
+     }
+
+     .p_img_qmsomos {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+     }
+
+    }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .txt {
+        font-size: 2.5em;
+        width: 600px;
+        margin: auto;
+        text-align: center;
+        }
+
+    #h1_1, #h1_2 {
+        line-height: 50px;
+     }
+
+     #p_qmsomos {
+        width: 500px;
+        line-height: 34px;
+        margin: 27px auto;
+     }
+
+     .imagem>img {
+        width: 360px;
+        height: 350px;
+     }
+
+     .p_img_qmsomos {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+     }
+}
+
+@media (min-width: 1025px) and (max-width: 1154px) {
+
+    section.container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .txt {
+    width: 240px;
+    padding: 10px;
+    font-size: 2.0em;
+    text-align: left;
+
+}
+
+
+.h1_qmsomos {
+  line-height: 43px;
+}
+
+#h1_1 {
+    font-weight: 200;
+
+}
+
+#h1_2 {
+    font-weight: 900;
+    color: #4d509a;
+}
+
+#p_qmsomos {
+    font-size: 0.6em;
+    color: #787878;
+    line-height: 20px;
+    margin-top: 10%;
+}
+
+.imagem>img {
+
+    width: 265px;
+    height: 258px;
+    padding: 10px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.p_img_qmsomos {
+    color: #4d509a;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 1155px) {
+    section.container {
+    justify-content: space-between;
+}
+
+
+.txt {
+    width: 250px;
+    margin-top: 15px ;
+    padding: 10px;
+    text-align: left;
+
+}
+
+
+.h1_qmsomos {
+    font-size: 2.5em;
+    line-height: 34px;
+}
+
+#h1_1 {
+    font-weight: 200;
+
+}
+
+#h1_2 {
+    font-weight: 900;
+    color: #4d509a;
+}
+
+#p_qmsomos {
+    font-size: 1.1em;
+    width: 230px;
+    line-height: 17px;
+}
+
+.imagem>img {
+
+    width: 258px;
+    height: 255px;
+}
+
+.p_img_qmsomos {
+    width: 200px;
+    color: #4d509a;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+}
